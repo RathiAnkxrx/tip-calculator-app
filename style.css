@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: hsl(185, 41%, 84%);
+  font-weight: 400;
+}
+
+.margin-bottom {
+  margin-bottom: 3.4rem;
+}
+.grid {
+  display: grid;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-2-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+.tip-calculator {
+  max-width: 100rem;
+  margin: 6.4rem auto;
+}
+.header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.calculator {
+  background-color: #fff;
+  padding: 3.4rem;
+  border-radius: 12px;
+  gap: 3rem;
+}
+
+.secondary-heading {
+  margin-bottom: 1.6rem;
+  color: hsl(186, 14%, 43%);
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 700;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  padding: 0.8rem 1.6rem;
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: hsl(185, 41%, 84%);
+  font-weight: 700;
+  text-align: right;
+}
+
+.input:focus,
+.input:hover {
+  outline: none;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0 0 0 2px hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+.tip-percent:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+.input-bill-box,
+.input-person-box {
+  position: relative;
+}
+.icon-image {
+  position: absolute;
+  left: 1.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.tip-percentages {
+  gap: 1.8rem;
+}
+
+.tip-percent {
+  border: none;
+  border-radius: 6px;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(185, 41%, 84%);
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 1.2rem 2.4rem;
+}
+
+.tip-percentages input {
+  text-align: center;
+  width: 100%;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(184, 14%, 56%);
+  border-radius: 6px;
+}
+
+/* Selecting tip percent */
+.selected .open {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+/*error*/
+
+.total-customer {
+  position: relative;
+}
+.error .input:focus,
+.error .input:hover {
+  box-shadow: 0 0 0 2px #ff7359;
+}
+
+.error-message {
+  display: none;
+}
+.error .error-message {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: inherit;
+  color: #ff7359;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+/********************/
+/* calculator-output */
+/********************/
+
+.calculator-output {
+  display: flex;
+  flex-direction: column;
+
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  padding: 4.8rem 2.4rem;
+}
+
+.output-heading {
+  color: hsl(189, 41%, 97%);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.output-heading span {
+  display: block;
+  color: hsl(184, 14%, 56%);
+  font-size: 1.2rem;
+}
+
+.amount {
+  font-size: 4.8rem;
+  color: hsl(172, 67%, 45%);
+  font-weight: 700;
+}
+.reset {
+  margin-top: auto;
+  padding: 1.6rem;
+  text-align: center;
+  background-color: hsl(186, 14%, 43%);
+  border: none;
+  border-radius: 6px;
+  color: hsl(183, 100%, 15%);
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reset.active {
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+
+.color {
+  color: hsl(183, 100%, 15%);
+  color: hsl(186, 14%, 43%);
+  color: hsl(184, 14%, 56%);
+  color: hsl(185, 41%, 84%);
+  color: hsl(189, 41%, 97%);
+  color: hsl(172, 67%, 45%);
+}
+
+/* - Strong cyan: hsl(172, 67%, 45%)
+
+### Neutral
+
+- Very dark cyan: hsl(183, 100%, 15%)
+- Dark grayish cyan: hsl(186, 14%, 43%)
+- Dark grayish cyan: hsl(184, 14%, 56%)
+- Light grayish cyan: hsl(185, 41%, 84%)
+- Light grayish cyan: hsl(189, 41%, 97%)
+- White: hsl(0, 0%, 100%) */

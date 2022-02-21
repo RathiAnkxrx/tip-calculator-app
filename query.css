@@ -1,0 +1,20 @@
+@media (max-width: 50em) {
+  html {
+    font-size: 50%;
+  }
+  .tip-calculator {
+    height: 100vh;
+  }
+  .grid-2-column {
+    grid-template-columns: 1fr;
+  }
+  .grid-3-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .reset {
+    margin-top: 3.4rem;
+  }
+  .amount {
+    font-size: 3.4rem;
+  }
+}
